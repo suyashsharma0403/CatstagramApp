@@ -1,0 +1,49 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="8dp">
+
+    <!-- Nested LinearLayout for the card content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Main Image -->
+        <ImageView
+            android:id="@+id/postImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+
+        <!-- Text Content -->
+        <TextView
+            android:id="@+id/idDisplay"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postImage"
+            android:text=""
+            android:padding="16dp"
+            android:textSize="16sp"/>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/likeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postImage"
+            android:layout_alignTop="@id/idDisplay"
+            android:layout_marginLeft="150dp"
+            android:layout_toRightOf="@id/idDisplay"
+            android:text="Like" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

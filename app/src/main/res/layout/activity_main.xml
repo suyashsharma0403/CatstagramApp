@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/billabong"
+        android:textSize="30dp"
+        android:layout_marginTop="100dp"
+        android:text="Catstagram"
+        android:gravity="center"
+        android:id="@+id/tv1"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/coolcat"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="4dp"
+        android:layout_below="@id/tv1"
+        android:id="@+id/img1"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Create an account and join a community of cat lovers! \n We're feline good here!"
+        android:layout_below="@id/img1"
+        android:gravity="center"
+        android:id="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Enter username"
+        android:textSize="15dp"
+        android:layout_below="@id/tv2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/username"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Enter password"
+        android:textSize="15dp"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/userPassword"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Re-enter password"
+        android:textSize="15dp"
+        android:layout_below="@id/userPassword"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/userPasswordRepeat"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:background="@drawable/rounded_corner"
+        android:layout_below="@id/userPasswordRepeat"
+        android:id="@+id/b1"
+        android:textSize="15dp"
+        android:text="Make account"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--ImageView
+        android:layout_width="150dp"
+        android:layout_height="500dp"
+        android:layout_below="@id/b1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/img"
+        /-->
+
+</RelativeLayout>
